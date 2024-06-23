@@ -13,12 +13,12 @@
                       <input type="text" id="title" name="title" value="<%= book.title %>" required/>
             </div>
             <div>
-                <label for ="title">Author: </label>
+                <label for ="author">Author:</label>
                 <input type="text" id="author" name="author"  value="<%= book.author %>" required/>
              </div>
              <div>
-                <label for ="title">PublishedDate: </label>
-                <input type="date" id="PublishedDate" name="PublishedDate"  value="<%= new Date(book.publishedDate).toISOString().split('T')[0] %>" required/>
+                <label for ="publishedDate">publishedDate: </label>
+                <input type="date" id="publishedDate" name="publishedDate"  value="<%= new Date(book.publishedDate).toISOString().split('T')[0] %>" required/>
              </div>
              <button type="submit">Update Book</button>
 
